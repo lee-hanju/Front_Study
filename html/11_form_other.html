@@ -1,0 +1,67 @@
+<!-- 개발자는 사용자의 편의를 위해서는 더 불편해야 한다 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">살고 있는 지역은?</label>
+    <!-- select은 여러 옵션 중에 하나를 선택하게 할 수도 있고 여러개를 선택하게 할 수도 있다. -->
+    <!-- select는 선택 할 옵션의 개수가 많을 때 사용한다. (ex.국가) -->
+    <select name="" id="">
+      <!-- 보이는 텍스트는 고유한 값이 아님 -->
+      <option value="02">서울</option>
+      <option value="051">부산</option>
+      <option value="064">제주</option>
+      <!-- mutiful 속성이 있지만 사용 안한다 잘 -->
+    </select>
+    <select name="" id="">
+      <option value="male">남자</option>
+      <option value="female">여자</option>
+    </select>
+    <div>
+      <input type="radio" name="rdo_gender" id="male" />
+      <label for="male">남자</label>
+      <input type="radio" name="rdo_gender" id="female" />
+      <label for="female">여자</label>
+    </div>
+    <div>
+      <textarea name="" id="" style="width: 100%" rows="10"></textarea>
+      <!-- cols는 알파벳 기준 30개 rows는 10줄 -->
+    </div>
+    <div>
+      <!-- fieldset legend를 사용하면 관련된 정보끼리 묶어서 입력하도록 만들 수 있다. -->
+      <fieldset>
+        <legend>학력정보</legend>
+        <div>
+          <label for="name">이름</label>
+          <input type="text" name="" id="name" />
+        </div>
+        <div>
+          <label for="tel">연락처</label>
+          <input type="tel" name="" id="tel" />
+        </div>
+      </fieldset>
+    </div>
+    <div>
+      <!-- datalist는 옵션이 많을 때 입력을 해서 빠르게 찾을 수 있다. -->
+      <!-- 단점은 입력을하고 지워도 막을 수 없다. -->
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer">Internet Explorer</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Chrome">chrome</option>
+        <option value="Opera">Opera</option>
+        <option value="Safari">Safari</option>
+      </datalist>
+    </div>
+    <!-- id를 사용해서 두 개를 연동할 수 있다. -->
+    <div>
+      <input list="browsers" id="browsers2" />
+    </div>
+  </body>
+</html>

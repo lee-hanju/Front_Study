@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input type="text" name="" id="" value="ABC" />
+      </div>
+      <div>
+        <!-- 수정 불가능 -->
+        <input type="text" name="" id="" value="ABC" readonly />
+      </div>
+      <div>
+        <!-- value값이 sever에 전송이 불가능 -->
+        <input type="text" name="" id="" value="ABC" disabled />
+        <button type="submit">저장</button>
+      </div>
+    </form>
+    <div>
+      <input type="text" name="" id="" maxlength="6" />
+    </div>
+    <div>
+      <!-- placeholder로 가이드를 줄 수 있음. 실무사용 많음 -->
+      <input
+        type="tel"
+        name=""
+        id=""
+        style="width: 100%"
+        placeholder="하이픈(-) 없이 숫자만 입력하세요. 예)01000011111"
+      />
+    </div>
+    <div>
+      <!-- required는 form안에서만 사용가능한 태그 -->
+      <!-- 필수 입력을 받아야 하는 경우에 사용 -->
+      <form action="">
+        <label for="userId">아이디</label>
+        <input
+          type="text"
+          name=""
+          id="userId"
+          autocomplete="on"
+          autofocus="on"
+          required
+        />
+        <label for="">비밀번호</label>
+        <input type="password" name="" id="userPass" required />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <!-- 브라우저를 이용해서 사용했던 정보(name값이 중요), (이메일, 전화번호 등)들을 다 불러옴 -->
+      <!-- 모든 사이트의 캐시 정보들을 불러옴 -->
+      <!-- autocomplete를 쓸 때는 표준 name값을 맞춰서 사용 해야한다. -->
+      <input type="text" name="email" id="" autocomplete="on" />
+    </div>
+  </body>
+</html>

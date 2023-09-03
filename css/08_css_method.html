@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* .table { 
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .table tr th,
+      .table tr td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .striped-table tbody tr:nth-child(2n + 1) {
+        background-color: greenyellow;
+      }*/
+
+      .table {
+        border: 1px solid black;
+        width: 300px;
+        /* 동일한 클래스명을 사용하면 클래스 두 개가 합쳐져서 같은 스타일 속성만 나중에 선언한 클래스로 대체된다. */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS를 적용하는 방법 3가지 -->
+    <!-- 1. inline style : html 시작 태그에 style 속성을 통해 직접 지정하는 것(inline 스타일을 사용하는 것은 지양해야함.) -->
+    <!-- 2. internal css : head 태그 안에 <style> 태그에 스타일을 지정 -->
+    <!-- 3. external css : 별도의 css 파일을 만들고  <head> 태그 안에 css 파일을 삽입해서 사용(실무에서 많이 사용 external은 지향해야함.) -->
+    <a href="" style="text-decoration: none">개발자의품격</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>유재석</td>
+          <td>010-0000-0000</td>
+          <td>ryu@gmail.com</td>
+        </tr>
+        <tr>
+          <td>김종국</td>
+          <td>010-0100-0000</td>
+          <td>ryu@gmail.com</td>
+        </tr>
+        <tr>
+          <td>송지효</td>
+          <td>010-2000-0000</td>
+          <td>song@gmail.com</td>
+        </tr>
+        <tr>
+          <td>양세찬</td>
+          <td>010-0300-0000</td>
+          <td>yang@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table class="table striped-table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>유재석</td>
+          <td>010-0000-0000</td>
+          <td>ryu@gmail.com</td>
+        </tr>
+        <tr>
+          <td>김종국</td>
+          <td>010-0100-0000</td>
+          <td>ryu@gmail.com</td>
+        </tr>
+        <tr>
+          <td>송지효</td>
+          <td>010-2000-0000</td>
+          <td>song@gmail.com</td>
+        </tr>
+        <tr>
+          <td>양세찬</td>
+          <td>010-0300-0000</td>
+          <td>yang@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
